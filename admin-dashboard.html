@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="admin-sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-compass"></i>
+                <h2>NTT Explorer</h2>
+            </div>
+            <p class="admin-role">Administrator</p>
+        </div>
+
+        <div class="sidebar-nav">
+            <ul>
+                <li class="nav-item active"><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li class="nav-item"><a href="#"><i class="fas fa-map"></i> Destinasi</a></li>
+                <li class="nav-item"><a href="#"><i class="fas fa-image"></i> Galeri</a></li>
+                <li class="nav-item"><a href="#"><i class="fas fa-user"></i> Pengguna</a></li>
+                <li class="nav-item"><a href="#"><i class="fas fa-cog"></i> Pengaturan</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-footer">
+            <a href="../index.html" class="back-to-site">
+                <i class="fas fa-arrow-left"></i> Kembali ke Website
+            </a>
+
+            <button id="logoutBtn" class="logout-btn">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </button>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+            <div class="header-left">
+                <button id="sidebarToggle" class="sidebar-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <h1>Dashboard</h1>
+            </div>
+
+            <div class="header-right">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Cari data...">
+                </div>
+
+                <div class="notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </div>
+
+                <div class="admin-profile">
+                    <img src="aset/ansar pramuka.png">
+                    <span>Admin</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- CONTENT -->
+        <div class="admin-content">
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon" style="background:#2c5aa0;">
+                        <i class="fas fa-map"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>124</h3>
+                        <p>Destinasi Wisata</p>
+                        <span class="stat-change positive">+5 minggu ini</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon" style="background:#ff6b6b;">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>1554</h3>
+                        <p>Pengguna Terdaftar</p>
+                        <span class="stat-change positive">+12 hari ini</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon" style="background:#17a2b8;">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>312</h3>
+                        <p>Foto Galeri</p>
+                        <span class="stat-change negative">-3 minggu ini</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="card-header">
+                        <h3>Aktivitas Terbaru</h3>
+                        <a href="#" class="view-all">Lihat Semua</a>
+                    </div>
+
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon"><i class="fas fa-user"></i></div>
+                            <div class="activity-content">
+                                <h4>User baru mendaftar</h4>
+                                <p>Akun: <b>Ali abdillah muttawwab</b></p>
+                                <span class="activity-time">4 menit lalu</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon"><i class="fas fa-map"></i></div>
+                            <div class="activity-content">
+                                <h4>Destinasi baru ditambahkan</h4>
+                                <p>“Pantai Liang Bala”</p>
+                                <span class="activity-time">5 jam lalu</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <div class="card-header">
+                        <h3>Destinasi Populer</h3>
+                        <a href="#" class="view-all">Lihat Semua</a>
+                    </div>
+
+                    <div class="popular-destinations">
+
+                        <div class="destination-item">
+                            <img src="aset/pantai pink.jpg">
+                            <div class="destination-info">
+                                <h4>Pantai Koka</h4>
+                                <p>Flores Timur</p>
+                                <div class="rating">
+                                    ★★★★☆
+                                </div>
+                            </div>
+                            <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                        </div>
+
+                        <div class="destination-item">
+                            <img src="aset/Air Terjun Oehala.jpg">
+                            <div class="destination-info">
+                                <h4>Air Terjun Oehala</h4>
+                                <p>TTU</p>
+                                <div class="rating">
+                                    ★★★★★
+                                </div>
+                            </div>
+                            <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/admin.js"></script>
+
+</body>
+</html>

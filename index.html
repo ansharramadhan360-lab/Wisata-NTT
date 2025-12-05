@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTT Explorer - Portal Wisata Nusa Tenggara Timur</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2><i class="fas fa-mountain"></i> NTT Explorer</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Beranda</a></li>
+                    <li><a href="#categories" class="nav-link">Kategori</a></li>
+                    <li><a href="#destinations" class="nav-link">Destinasi</a></li>
+                    <li><a href="#about" class="nav-link">Tentang</a></li>
+                    <li><a href="#contact" class="nav-link">Kontak</a></li>
+                    <li><a href="login.html" class="nav-link login-btn">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span>Login</span>
+                    </a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-award"></i>
+                <span>Destinasi Terbaik Indonesia</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Jelajahi Keindahan</span>
+                <span class="title-line highlight">Nusa Tenggara Timur</span>
+            </h1>
+            <p class="hero-subtitle">Temukan destinasi wisata menakjubkan di Flores, Sumba, dan pulau-pulau eksotis NTT dengan pengalaman tak terlupakan</p>
+            <div class="hero-search">
+                <div class="search-box">
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <input type="text" id="searchInput" placeholder="Cari destinasi wisata, aktivitas, atau lokasi...">
+                    <button id="searchBtn">
+                        <span>Cari</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="search-suggestions" id="searchSuggestions">
+                    <div class="suggestion-item" data-search="komodo">
+                        <i class="fas fa-dragon"></i>
+                        <span>Komodo</span>
+                    </div>
+                    <div class="suggestion-item" data-search="pantai">
+                        <i class="fas fa-umbrella-beach"></i>
+                        <span>Pantai Pink</span>
+                    </div>
+                    <div class="suggestion-item" data-search="kelimutu">
+                        <i class="fas fa-mountain"></i>
+                        <span>Kelimutu</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item" data-count="10">
+                    <h3>0</h3>
+                    <p>Destinasi</p>
+                </div>
+                <div class="stat-item" data-count="25000">
+                    <h3>0</h3>
+                    <p>Wisatawan</p>
+                </div>
+                <div class="stat-item" data-count="10">
+                    <h3>0</h3>
+                    <p>Kabupaten</p>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <div class="scroll-indicator">
+                    <span>Scroll untuk eksplorasi</span>
+                    <div class="scroll-arrow">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slider">
+            <div class="slide active">
+                <img src="aset/raja ampat.jpg" alt="Raja Ampat">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h3>Nusa Tenggara Timur</h3>
+                    <p>Surga bawah laut dengan keanekaragaman hayati terbaik di dunia</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="aset/kelimutu.jpg" alt="Kelimutu">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h3>Kelimutu</h3>
+                    <p>Gunung dengan tiga danau kawah berwarna yang misterius</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="aset/LABUAN BAJO.jpg" alt="Labuan Bajo">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h3>Labuan Bajo</h3>
+                    <p>Gerbang menuju Taman Nasional Komodo</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="aset/kuda sumba.jpg" alt="Sumba Waikuri">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h3>Sumba Waikuri</h3>
+                    <p>Pantai eksotis dengan budaya tradisional yang autentik</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="aset/waerebo manggarai.jpg" alt="Waerebo">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h3>Waerebo</h3>
+                    <p>Desa tradisional di atas awan dengan rumah kerucut</p>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slider-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+            <span class="indicator" data-slide="3"></span>
+            <span class="indicator" data-slide="4"></span>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">Kategori Wisata</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="pantai">
+                    <div class="category-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3>Pantai</h3>
+                    <p>Pantai-pantai eksotis di NTT dengan pasir pink dan air jernih</p>
+                </div>
+                <div class="category-card" data-category="pulau">
+                    <div class="category-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Pulau</h3>
+                    <p>Pulau-pulau menakjubkan di Flores dan sekitarnya</p>
+                </div>
+                <div class="category-card" data-category="komodo">
+                    <div class="category-icon">
+                        <i class="fas fa-dragon"></i>
+                    </div>
+                    <h3>Komodo</h3>
+                    <p>Habitat asli komodo dan satwa liar lainnya</p>
+                </div>
+                <div class="category-card" data-category="budaya">
+                    <div class="category-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>Budaya</h3>
+                    <p>Warisan budaya Flores dan tradisi lokal</p>
+                </div>
+                <div class="category-card" data-category="kuliner">
+                    <div class="category-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Kuliner</h3>
+                    <p>Kuliner khas NTT yang lezat dan autentik</p>
+                </div>
+                <div class="category-card" data-category="adventure">
+                    <div class="category-icon">
+                        <i class="fas fa-hiking"></i>
+                    </div>
+                    <h3>Petualangan</h3>
+                    <p>Trekking, diving, dan aktivitas adventure seru</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2 class="section-title">Destinasi Populer</h2>
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="pantai">Pantai</button>
+                <button class="filter-btn" data-filter="pulau">Pulau</button>
+                <button class="filter-btn" data-filter="komodo">Komodo</button>
+                <button class="filter-btn" data-filter="budaya">Budaya</button>
+                <button class="filter-btn" data-filter="kuliner">Kuliner</button>
+                <button class="filter-btn" data-filter="adventure">Petualangan</button>
+            </div>
+            <div class="destinations-grid" id="destinationsGrid">
+                <!-- Labuan Bajo -->
+                <div class="destination-card" data-category="pulau">
+                    <div class="destination-image">
+                        <img src="aset/LABUAN BAJO.jpg" alt="Labuan Bajo">
+                        <div class="destination-badge">Populer</div>
+                    </div>
+                    <div class="destination-content">
+                        <h3 class="destination-title">Labuan Bajo</h3>
+                        <div class="destination-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Flores, NTT</span>
+                        </div>
+                        <p class="destination-description">Gerbang menuju Taman Nasional Komodo dengan pemandangan sunset yang memukau dan aktivitas diving terbaik.</p>
+                        <div class="destination-rating">
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-text">4.8 (2150 review)</span>
+                        </div>
+                        <div class="destination-price">Mulai dari Rp 500.000</div>
+                        <button class="btn-primary destination-detail-btn" data-destination="labuan-bajo">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Lihat Detail</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pulau Komodo -->
+                <div class="destination-card" data-category="komodo">
+                    <div class="destination-image">
+                        <img src="aset/komodo.jpg" alt="Pulau Komodo">
+                        <div class="destination-badge">Populer</div>
+                    </div>
+                    <div class="destination-content">
+                        <h3 class="destination-title">Pulau Komodo</h3>
+                        <div class="destination-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Taman Nasional Komodo</span>
+                        </div>
+                        <p class="destination-description">Habitat asli komodo dengan pemandangan savana yang menakjubkan dan satwa liar yang unik.</p>
+                        <div class="destination-rating">
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.9 (1890 review)</span>
+                        </div>
+                        <div class="destination-price">Mulai dari Rp 750.000</div>
+                        <button class="btn-primary destination-detail-btn" data-destination="pulau-komodo">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Lihat Detail</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pink Beach -->
+                <div class="destination-card" data-category="pantai">
+                    <div class="destination-image">
+                        <img src="aset/pantai pink.jpg" alt="Pink Beach">
+                        <div class="destination-badge">Unik</div>
+                    </div>
+                    <div class="destination-content">
+                        <h3 class="destination-title">Pink Beach</h3>
+                        <div class="destination-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Pulau Komodo</span>
+                        </div>
+                        <p class="destination-description">Pantai dengan pasir berwarna pink yang unik di dunia, hasil dari serpihan karang merah.</p>
+                        <div class="destination-rating">
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-text">4.7 (1650 review)</span>
+                        </div>
+                        <div class="destination-price">Mulai dari Rp 300.000</div>
+                        <button class="btn-primary destination-detail-btn" data-destination="pink-beach">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Lihat Detail</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Waerebo -->
+                <div class="destination-card" data-category="budaya">
+                    <div class="destination-image">
+                        <img src="aset/waerebo manggarai.jpg" alt="Waerebo">
+                        <div class="destination-badge">Instagramable</div>
+                    </div>
+                    <div class="destination-content">
+                        <h3 class="destination-title">Waerebo</h3>
+                        <div class="destination-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Manggarai, Flores</span>
+                        </div>
+                        <p class="destination-description">Wae Rebo adalah desa adat Manggarai di Flores yang terkenal dengan 7 rumah kerucut (Mbaru Niang) dan sering disebut Desa atas awan.</p>
+                        <div class="destination-rating">
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-text">4.8 (1420 review)</span>
+                        </div>
+                        <div class="destination-price">Mulai dari Rp 400.000</div>
+                        <button class="btn-primary destination-detail-btn" data-destination="waerebo">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Lihat Detail</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Kelimutu -->
+                <div class="destination-card" data-category="budaya">
+                    <div class="destination-image">
+                        <img src="aset/kelimutu.jpg" alt="Kelimutu">
+                        <div class="destination-badge">Misterius</div>
+                    </div>
+                    <div class="destination-content">
+                        <h3 class="destination-title">Kelimutu</h3>
+                        <div class="destination-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ende, Flores</span>
+                        </div>
+                        <p class="destination-description">Gunung dengan tiga danau kawah berwarna berbeda yang berubah-ubah sesuai musim.</p>
+                        <div class="destination-rating">
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-text">4.6 (1280 review)</span>
+                        </div>
+                        <div class="destination-price">Mulai dari Rp 150.000</div>
+                        <button class="btn-primary destination-detail-btn" data-destination="kelimutu">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Lihat Detail</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pantai Waingapu -->
+                <div class="destination-card" data-category="pantai">
+                    <div class="destination-image">
+                        <img src="aset/waingapu.avif" alt="Pantai Waingapu">
+                        <div class="destination-badge">Surfing</div>
+                    </div>
+                    <div class="destination-content">
+                        <h3 class="destination-title">Pantai Waingapu</h3>
+                        <div class="destination-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Sumba Timur</span>
+                        </div>
+                        <p class="destination-description">Pantai dengan ombak yang cocok untuk surfing dan budaya Sumba yang masih autentik.</p>
+                        <div class="destination-rating">
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.4 (950 review)</span>
+                        </div>
+                        <div class="destination-price">Mulai dari Rp 200.000</div>
+                        <button class="btn-primary destination-detail-btn" data-destination="pantai-waingapu">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Lihat Detail</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pulau Padar -->
+                <div class="destination-card" data-category="pulau">
+                    <div class="destination-image">
+                        <img src="aset/kapal.jpg" alt="Pulau Padar">
+                        <div class="destination-badge">Instagramable</div>
+                    </div>
+                    <div class="destination-content">
+                        <h3 class="destination-title">Pulau Padar</h3>
+                        <div class="destination-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Taman Nasional Komodo</span>
+                        </div>
+                        <p class="destination-description">Pulau dengan tiga pantai berwarna berbeda dan spot foto sunrise terbaik di NTT.</p>
+                        <div class="destination-rating">
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-text">4.8 (1420 review)</span>
+                        </div>
+                        <div class="destination-price">Mulai dari Rp 400.000</div>
+                        <button class="btn-primary destination-detail-btn" data-destination="pulau-padar">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Lihat Detail</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pulau Rinca -->
+                <div class="destination-card" data-category="komodo">
+                    <div class="destination-image">
+                        <img src="aset/0916c43d72ac007aee1a1a7d6d31d231.jpg" alt="Pulau Rinca">
+                        <div class="destination-badge">Wildlife</div>
+                    </div>
+                    <div class="destination-content">
+                        <h3 class="destination-title">Pulau Rinca</h3>
+                        <div class="destination-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Taman Nasional Komodo</span>
+                        </div>
+                        <p class="destination-description">Pulau dengan populasi komodo terbesar dan pemandangan savana yang menakjubkan.</p>
+                        <div class="destination-rating">
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-text">4.7 (1350 review)</span>
+                        </div>
+                        <div class="destination-price">Mulai dari Rp 350.000</div>
+                        <button class="btn-primary destination-detail-btn" data-destination="pulau-rinca">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Lihat Detail</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Kampung Adat Bena -->
+                <div class="destination-card" data-category="budaya">
+                    <div class="destination-image">
+                        <img src="aset/kampung-bena.jpg" alt="Kampung Adat Bena">
+                        <div class="destination-badge">Tradisional</div>
+                    </div>
+                    <div class="destination-content">
+                        <h3 class="destination-title">Kampung Adat Bena</h3>
+                        <div class="destination-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ngada, Flores</span>
+                        </div>
+                        <p class="destination-description">Desa tradisional Ngada dengan rumah adat megalitik dan budaya yang masih terjaga.</p>
+                        <div class="destination-rating">
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.5 (850 review)</span>
+                        </div>
+                        <div class="destination-price">Mulai dari Rp 100.000</div>
+                        <button class="btn-primary destination-detail-btn" data-destination="kampung-adat-bena">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Lihat Detail</span>
+                        </button>
+                    </div>
+                </div>
+            <div class="load-more">
+                <button class="btn-primary" id="loadMoreBtn">Lihat Lebih Banyak</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destination Modal -->
+    <div id="destinationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- komentar mereka  -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Kata Mereka Tentang NTT</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>"Pengalaman diving di Labuan Bajo benar-benar luar biasa! Airnya jernih, ikan-ikan berwarna-warni, dan pemandangan bawah lautnya memukau. Pasti akan kembali lagi!"</p>
+                            <div class="testimonial-author">
+                                <img src="aset/ansar pramuka.png" alt="Ansari">
+                                <div class="author-info">
+                                    <h4>Ansari Ramadhan</h4>
+                                    <span>Student</span>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>"Kelimutu adalah tempat yang sangat mistis dan indah. Melihat tiga danau dengan warna berbeda dalam satu tempat adalah pengalaman yang tidak terlupakan. Sunrise-nya juga spektakuler!"</p>
+                            <div class="testimonial-author">
+                                <img src="aset/IMG_20250101_124909.jpg" alt="Hafizah">
+                                <div class="author-info">
+                                    <h4>Hafizah Aulia Ibrahim</h4>
+                                    <span>Student</span>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>"Pink Beach benar-benar unik! Pasirnya berwarna pink yang cantik dan airnya sangat jernih. Snorkeling di sini seperti berada di akuarium raksasa. Highly recommended!"</p>
+                            <div class="testimonial-author">
+                                <img src="aset/fiida.jpg.png" alt="fiida">
+                                <div class="author-info">
+                                    <h4>Mufida Abdi Rasti</h4>
+                                    <span>Mahasiswa</span>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>"Waerebo adalah tempat yang sangat autentik! Desa tradisional di atas awan dengan rumah kerucut yang unik. Budaya dan keramahan masyarakatnya membuat saya merasa seperti di rumah."</p>
+                            <div class="testimonial-author">
+                                <img src="aset/download.ansar80.png" alt="Farisul">
+                                <div class="author-info">
+                                    <h4>Farisul Fahmi</h4>
+                                    <span>Cultural Explorer</span>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-indicators">
+                        <span class="indicator active" data-slide="0"></span>
+                        <span class="indicator" data-slide="1"></span>
+                        <span class="indicator" data-slide="2"></span>
+                        <span class="indicator" data-slide="3"></span>
+                    </div>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog">
+        <div class="container">
+            <h2 class="section-title">Tips & Panduan Wisata</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="aset/bawah laut.jpg" alt="Diving Tips">
+                        <div class="blog-category">Tips Diving</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                15 Desember 2025
+                            </span>
+                            <span class="blog-author">
+                                <i class="fas fa-user"></i>
+                                NTT Explorer Team
+                            </span>
+                        </div>
+                        <h3>Panduan Lengkap Diving di Labuan Bajo</h3>
+                        <p>Pelajari tips dan trik untuk pengalaman diving terbaik di Labuan Bajo, termasuk spot terbaik, waktu ideal, dan perlengkapan yang diperlukan.</p>
+                        <a href="#" class="blog-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="aset/pulau komodo.jpg" alt="Komodo Guide">
+                        <div class="blog-category">Wildlife</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                12 Desember 2025
+                            </span>
+                            <span class="blog-author">
+                                <i class="fas fa-user"></i>
+                                Wildlife Expert
+                            </span>
+                        </div>
+                        <h3>Mengenal Komodo: Raja Pulau Rinca</h3>
+                        <p>Fakta menarik tentang komodo, habitat aslinya, dan tips aman saat berkunjung ke Taman Nasional Komodo untuk melihat hewan purba ini.</p>
+                        <a href="#" class="blog-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="aset/kelimutu 3.jpg" alt="Kelimutu Guide">
+                        <div class="blog-category">Adventure</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                10 Desember 2024
+                            </span>
+                            <span class="blog-author">
+                                <i class="fas fa-user"></i>
+                                Adventure Guide
+                            </span>
+                        </div>
+                        <h3>Misteri Danau Kelimutu yang Menakjubkan</h3>
+                        <p>Jelajahi misteri dan keindahan tiga danau kawah Kelimutu yang berubah warna, lengkap dengan legenda lokal dan tips fotografi terbaik.</p>
+                        <a href="#" class="blog-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section class="interactive-map">
+        <div class="container">
+            <h2 class="section-title">Peta Interaktif Destinasi</h2>
+            <div class="map-container">
+                <div class="map-wrapper">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Peta Interaktif NTT</h3>
+                        <p>Klik pada marker untuk melihat informasi destinasi</p>
+                        <div class="map-legend">
+                            <div class="legend-item">
+                                <div class="legend-color pantai"></div>
+                                <span>Pantai</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color pulau"></div>
+                                <span>Pulau</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color komodo"></div>
+                                <span>Komodo</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color budaya"></div>
+                                <span>Budaya</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-destinations">
+                    <h3>Destinasi Populer</h3>
+                    <div class="destination-list">
+                        <div class="map-destination-item" data-location="labuan-bajo">
+                            <div class="destination-marker pantai"></div>
+                            <div class="destination-info">
+                                <h4>Labuan Bajo</h4>
+                                <p>Flores, NTT</p>
+                            </div>
+                        </div>
+                        <div class="map-destination-item" data-location="komodo">
+                            <div class="destination-marker komodo"></div>
+                            <div class="destination-info">
+                                <h4>Pulau Komodo</h4>
+                                <p>Taman Nasional Komodo</p>
+                            </div>
+                        </div>
+                        <div class="map-destination-item" data-location="kelimutu">
+                            <div class="destination-marker budaya"></div>
+                            <div class="destination-info">
+                                <h4>Kelimutu</h4>
+                                <p>Ende, Flores</p>
+                            </div>
+                        </div>
+                        <div class="map-destination-item" data-location="pink-beach">
+                            <div class="destination-marker pantai"></div>
+                            <div class="destination-info">
+                                <h4>Pink Beach</h4>
+                                <p>Pulau Komodo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weather Widget Section -->
+    <section class="weather-widget">
+        <div class="container">
+            <h2 class="section-title">Kondisi Cuaca Destinasi</h2>
+            <div class="weather-grid">
+                <div class="weather-card">
+                    <div class="weather-header">
+                        <h3>Labuan Bajo</h3>
+                        <div class="weather-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                    </div>
+                    <div class="weather-temp">28°C</div>
+                    <div class="weather-desc">Cerah</div>
+                    <div class="weather-details">
+                        <div class="weather-detail">
+                            <i class="fas fa-eye"></i>
+                            <span>Visibilitas: 10 km</span>
+                        </div>
+                        <div class="weather-detail">
+                            <i class="fas fa-wind"></i>
+                            <span>Angin: 15 km/h</span>
+                        </div>
+                        <div class="weather-detail">
+                            <i class="fas fa-tint"></i>
+                            <span>Kelembaban: 75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-card">
+                    <div class="weather-header">
+                        <h3>Sumba</h3>
+                        <div class="weather-icon">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                    </div>
+                    <div class="weather-temp">30°C</div>
+                    <div class="weather-desc">Berawan</div>
+                    <div class="weather-details">
+                        <div class="weather-detail">
+                            <i class="fas fa-eye"></i>
+                            <span>Visibilitas: 8 km</span>
+                        </div>
+                        <div class="weather-detail">
+                            <i class="fas fa-wind"></i>
+                            <span>Angin: 12 km/h</span>
+                        </div>
+                        <div class="weather-detail">
+                            <i class="fas fa-tint"></i>
+                            <span>Kelembaban: 80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-card">
+                    <div class="weather-header">
+                        <h3>Ende</h3>
+                        <div class="weather-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                    </div>
+                    <div class="weather-temp">26°C</div>
+                    <div class="weather-desc">Mendung</div>
+                    <div class="weather-details">
+                        <div class="weather-detail">
+                            <i class="fas fa-eye"></i>
+                            <span>Visibilitas: 6 km</span>
+                        </div>
+                        <div class="weather-detail">
+                            <i class="fas fa-wind"></i>
+                            <span>Angin: 18 km/h</span>
+                        </div>
+                        <div class="weather-detail">
+                            <i class="fas fa-tint"></i>
+                            <span>Kelembaban: 85%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Mengapa Memilih NTT Explorer?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Peta Interaktif</h3>
+                    <p>Navigasi mudah dengan peta interaktif yang akurat</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Rating & Review</h3>
+                    <p>Baca review dari wisatawan lain sebelum memutuskan</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Galeri Foto</h3>
+                    <p>Lihat foto-foto terbaik dari setiap destinasi</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Akses mudah dari smartphone atau tablet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Tentang NTT Explorer</h2>
+                    <p>NTT Explorer adalah platform wisata khusus untuk Nusa Tenggara Timur yang menyediakan informasi lengkap tentang destinasi wisata menakjubkan di Flores, Sumba, dan pulau-pulau eksotis lainnya. Kami berkomitmen untuk memperkenalkan keindahan alam dan budaya NTT kepada dunia.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Destinasi NTT</p>
+                        </div>
+                        <div class="stat">
+                            <h3>25K+</h3>
+                            <p>Wisatawan Puas</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10</h3>
+                            <p>Kabupaten/Kota</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="aset/foto tentang.avif" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Jl. El Tari No. 1, Borong<br>Nusa Tenggara Timur 85111</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>+6281 239 121 745</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@nttexplorer.com</p>
+                            <p>@ansharramadhan360@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h4>Instagram</h4>
+                            <p>ansarramadhan_6</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nama Lengkap" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subjek" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Pesan" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-mountain"></i> NTT Explorer</h3>
+                    <p>Platform wisata khusus Nusa Tenggara Timur untuk menemukan destinasi terbaik.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Destinasi Populer</h4>
+                    <ul>
+                        <li><a href="#">Labuan Bajo</a></li>
+                        <li><a href="#">Ende</a></li>
+                        <li><a href="#">Manggarai</a></li>
+                        <li><a href="#">Sumba</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kategori</h4>
+                    <ul>
+                        <li><a href="#">Pantai</a></li>
+                        <li><a href="#">Pulau</a></li>
+                        <li><a href="#">Danau</a></li>
+                        <li><a href="#">Budaya</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Bantuan</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NTT Explorer. By Ansar.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Particles.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="js/script.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script>
+        // Initialize particles
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof particlesJS !== 'undefined') {
+                particlesJS('particles', {
+                    particles: {
+                        number: { value: 80 },
+                        color: { value: '#ffffff' },
+                        shape: { type: 'circle' },
+                        opacity: { value: 0.5 },
+                        size: { value: 3 },
+                        line_linked: {
+                            enable: true,
+                            distance: 150,
+                            color: '#ffffff',
+                            opacity: 0.4,
+                            width: 1
+                        },
+                        move: {
+                            enable: true,
+                            speed: 2,
+                            direction: 'none',
+                            random: false,
+                            straight: false,
+                            out_mode: 'out',
+                            bounce: false
+                        }
+                    },
+                    interactivity: {
+                        detect_on: 'canvas',
+                        events: {
+                            onhover: { enable: true, mode: 'repulse' },
+                            onclick: { enable: true, mode: 'push' },
+                            resize: true
+                        }
+                    },
+                    retina_detect: true
+                });
+            }
+        });
+
+        // Counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-item[data-count]');
+            
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                const duration = 2000; // 2 seconds
+                const increment = target / (duration / 16); // 60fps
+                let current = 0;
+                
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        counter.querySelector('h3').textContent = Math.floor(current) + (target >= 1000 ? '+' : '');
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.querySelector('h3').textContent = target + (target >= 1000 ? '+' : '');
+                    }
+                };
+                
+                updateCounter();
+            });
+        }
+
+        // Initialize counter animation when hero section is visible
+        const heroObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    heroObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        const heroSection = document.querySelector('.hero');
+        if (heroSection) {
+            heroObserver.observe(heroSection);
+        }
+
+        // Search suggestions functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            const searchSuggestions = document.getElementById('searchSuggestions');
+            const suggestionItems = document.querySelectorAll('.suggestion-item');
+
+            if (searchInput && searchSuggestions) {
+                // Show suggestions on focus
+                searchInput.addEventListener('focus', function() {
+                    searchSuggestions.style.display = 'flex';
+                });
+
+                // Hide suggestions when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!searchInput.contains(e.target) && !searchSuggestions.contains(e.target)) {
+                        searchSuggestions.style.display = 'none';
+                    }
+                });
+
+                // Handle suggestion clicks
+                suggestionItems.forEach(item => {
+                    item.addEventListener('click', function() {
+                        const searchTerm = this.getAttribute('data-search');
+                        searchInput.value = searchTerm;
+                        searchSuggestions.style.display = 'none';
+                        
+                        // Trigger search
+                        if (typeof performSearch === 'function') {
+                            performSearch();
+                        }
+                    });
+                });
+            }
+        });
+
+        // Testimonials slider
+        document.addEventListener('DOMContentLoaded', function() {
+            const testimonialTrack = document.getElementById('testimonialTrack');
+            const testimonialCards = document.querySelectorAll('.testimonial-card');
+            const prevBtn = document.querySelector('.testimonial-prev');
+            const nextBtn = document.querySelector('.testimonial-next');
+            const indicators = document.querySelectorAll('.testimonial-indicators .indicator');
+            
+            let currentTestimonial = 0;
+            
+            function showTestimonial(index) {
+                testimonialCards.forEach((card, i) => {
+                    card.classList.toggle('active', i === index);
+                });
+                
+                indicators.forEach((indicator, i) => {
+                    indicator.classList.toggle('active', i === index);
+                });
+            }
+            
+            function nextTestimonial() {
+                currentTestimonial = (currentTestimonial + 1) % testimonialCards.length;
+                showTestimonial(currentTestimonial);
+            }
+            
+            function prevTestimonial() {
+                currentTestimonial = (currentTestimonial - 1 + testimonialCards.length) % testimonialCards.length;
+                showTestimonial(currentTestimonial);
+            }
+            
+            if (nextBtn) nextBtn.addEventListener('click', nextTestimonial);
+            if (prevBtn) prevBtn.addEventListener('click', prevTestimonial);
+            
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    currentTestimonial = index;
+                    showTestimonial(currentTestimonial);
+                });
+            });
+            
+            // Auto slide testimonials
+            setInterval(nextTestimonial, 5000);
+        });
+
+        // Smooth scroll for hero scroll indicator
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollIndicator = document.querySelector('.scroll-indicator');
+            if (scrollIndicator) {
+                scrollIndicator.addEventListener('click', function() {
+                    document.getElementById('categories').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+
